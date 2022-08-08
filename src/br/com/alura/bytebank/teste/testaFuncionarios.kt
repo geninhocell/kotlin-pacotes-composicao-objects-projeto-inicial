@@ -1,7 +1,6 @@
-import br.com.alura.bytebank.modelo.Analista
-import br.com.alura.bytebank.modelo.CalculadoraBonificacao
-import br.com.alura.bytebank.modelo.Diretor
-import br.com.alura.bytebank.modelo.Gerente
+package br.com.alura.bytebank.teste
+
+import br.com.alura.bytebank.modelo.*
 
 fun testaFuncionarios() {
     val alex = Analista(

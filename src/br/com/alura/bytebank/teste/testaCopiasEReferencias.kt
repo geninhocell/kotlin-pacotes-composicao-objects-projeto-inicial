@@ -1,3 +1,5 @@
+package br.com.alura.bytebank.teste
+
 import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
@@ -12,13 +14,12 @@ fun testaCopiasEReferencias() {
 
     val joao = Cliente(nome = "João", cpf = "", senha = 1)
 
-
     val contaJoao = ContaCorrente(joao, 1002)
     contaJoao.titular.nome = "João"
     var contaMaria = ContaPoupanca(Cliente(
-        nome = "Alex",
+        nome = "Maria",
         cpf = "",
-        senha = 1
+        senha = 2
     ), 1003)
     contaMaria.titular.nome = "Maria"
     contaJoao.titular.nome = "João"
